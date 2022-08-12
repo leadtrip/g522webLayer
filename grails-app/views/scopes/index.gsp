@@ -11,13 +11,13 @@
 
     Add and get:
     <br>
-    <g:link action="addAndGetFromApplicationScope">Add and get from application scope</g:link>
+    <g:link action="addAndGetFromApplicationScope">Get and add if not present from application scope</g:link>
     <br>
-    <g:link action="addAndGetFromSessionScope">Add and get from session scope</g:link>
+    <g:link action="addAndGetFromSessionScope">Get and add if not present from session scope</g:link>
     <br>
-    <g:link action="addAndGetFromRequestScope">Add and get from request scope</g:link>
+    <g:link action="addAndGetFromRequestScope">Get and add if not present from request scope</g:link>
     <br>
-    <g:link action="addAndGetFromParamsScope">Add and get from params scope</g:link>
+    <g:link action="addAndGetFromParamsScope">Get and add if not present from params scope</g:link>
     <br>
 
     Get:
