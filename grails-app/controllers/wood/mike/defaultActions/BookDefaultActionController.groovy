@@ -1,6 +1,7 @@
-package wood.mike
+package wood.mike.defaultActions
 
 import grails.gorm.transactions.ReadOnly
+import wood.mike.Book
 
 class BookDefaultActionController {
 
