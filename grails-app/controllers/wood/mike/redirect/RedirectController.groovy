@@ -6,13 +6,13 @@ import wood.mike.Book
 class RedirectController {
 
     def index() {
-        def methods =
+        def actions =
             getClass().methods.toList()
                 .stream()
                 .filter(m -> m.getAnnotation(Action) != null)
                 .map(m-> m.name)
 
-        [actions: methods, params: params]
+        [actions: actions, params: params]
     }
 
     def toIndex() {
