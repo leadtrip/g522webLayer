@@ -10,7 +10,6 @@ class Book {
     static constraints = {
         title nullable: false, blank: false
         author nullable: false, blank: false
-        reviews nullable: true
     }
 
     @Override
