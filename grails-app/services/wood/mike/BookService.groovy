@@ -28,4 +28,9 @@ class BookService {
         }
     }
 
+    Book changeTitle(Serializable id, String title) {
+        Book book = Book.get(id)
+        book.title = title
+        book
+    }
 }

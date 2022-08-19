@@ -12,6 +12,15 @@ class BookController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+    def actionArguments(String title) {
+        if( title ) {
+            bookService.changeTitle(params.id, title)
+            params.id = null
+            flash.message = 'Book title successfully updated'
+        }
+        [book: Book.get(params.id), books: bookService.list(params)]
+    }
+
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond bookService.list(params), model:[bookCount: bookService.count()]
