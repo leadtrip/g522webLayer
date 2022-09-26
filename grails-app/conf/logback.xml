@@ -11,6 +11,8 @@
         </encoder>
     </appender>
 
+    <logger name="wood.mike" level="info"/>
+
     <root level="error">
         <appender-ref ref="STDOUT" />
     </root>
